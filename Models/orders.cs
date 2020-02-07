@@ -9,10 +9,10 @@ namespace jd713116_MIS4200.Models
     public class Orders
     {
         [Key]
-        public int orderNum { get; set; }
+        public int ordersID { get; set; }
         public string description { get; set; }
         public DateTime orderDate { get; set; }
         public int customerID { get; set; }
-        public virtual Customer customer { get; set; }
+        public virtual Customer Customer { get; set; }
     }
 }
